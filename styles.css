@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Source+Code+Pro:wght@300;400&display=swap');
+html, body {
+    overflow: none;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0px;
+    background-color: #000;
+}
+.logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.breath {
+    -webkit-animation: breathing 4s ease-out infinite normal;
+    animation: breathing 4s ease-out infinite normal;
+}
+.footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100vw;
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 400;
+    color: #fff;
+}
+@-webkit-keyframes breathing {
+    0% {
+      -webkit-transform: scale(0.97);
+      transform: scale(0.97);
+    }
+    50% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+    100% {
+      -webkit-transform: scale(0.97);
+      transform: scale(0.97);
+    }
+}
+@keyframes breathing {
+    0% {
+      -webkit-transform: scale(0.97);
+      -ms-transform: scale(0.97);
+      transform: scale(0.97);
+    }
+    50% {
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+    }
+    100% {
+      -webkit-transform: scale(0.97);
+      -ms-transform: scale(0.97);
+      transform: scale(0.97);
+    }
+}
+  
